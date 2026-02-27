@@ -1,5 +1,5 @@
 {% set name = "conquest" %}
-{% set version = "1.3" %}
+{% set version = "1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/OrderN/CONQUEST-release/archive/v{{ version }}.tar.gz
-  sha256: b8b1693199b00fe9b86d0501a653973b9ce0aab72c57fc6c16f98f1ac472605c
+  sha256: e44f11047039e7b4e18b783fe11d1d3ceab5459c9b6f292f3214c68b2e7ca2ab
   patches:
     - system.patch
 
 build:
-  number: 4
+  number: 0
   skip: true  # [win]
 
 requirements:
